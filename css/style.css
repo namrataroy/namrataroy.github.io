@@ -706,7 +706,7 @@ section.research .research-box  {
     margin-bottom: 25px;
 }
 section.research .research-box .details {
-    border: 1px solid #eee;
+    border-top: 1px solid #eee;
     padding: 20px;
 }
 section.research .research-box .image {
@@ -737,11 +737,11 @@ section.research .research-box .title {
 section.research .research-box .details p {
     font-size: 14px;
     color: #666;
-    overflow: hidden;
+    /* overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
     -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
+    -webkit-box-orient: vertical; */
 }
 section.research .research-box .details .read-btn  {
     margin-top: 20px;
