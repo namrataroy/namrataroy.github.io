@@ -539,6 +539,20 @@ section.resume .name span {
     display: inline-block;
     padding-top: 10px;
 }
+
+.resume .resume-box h2 {
+    font-weight: 600;
+    display: inline-block;
+    font-size: 20px;
+}
+.resume .resume-box .border {
+    display: block;
+    width: 50px;
+    height: 2px;
+    background-color: #000;
+    margin: 20px 0;
+}
+
 .resume .resume-box ul {
     margin: 0;
     padding: 0;
@@ -549,6 +563,7 @@ section.resume .name span {
     position: relative;
     padding: 0 20px 0 60px;
     margin: 0 0 50px;
+    display: inline-block;
   }
   
   .resume .resume-box li:after {
@@ -637,6 +652,9 @@ section.resume .name span {
 section.research {
 	padding: 0 0 100px 0;
 }
+section.research a {
+    text-decoration: none;
+}
 section.research .name {
     width: 100%;
     float: left;
@@ -675,7 +693,14 @@ section.research .research-box .details {
     border: 1px solid #eee;
     padding: 20px;
 }
-section.research .research-box .details .title {
+section.research .research-box .image {
+    padding: 10px;
+    text-align: center;
+}
+section.research .research-box .image img {
+    height: 200px;
+}
+section.research .research-box .title {
     margin: 0;
     font-size: 18px;
     font-weight: 600;
@@ -687,6 +712,7 @@ section.research .research-box .details .title {
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
+    padding: 20px;
 }
 section.research .research-box .details p {
     font-size: 14px;
