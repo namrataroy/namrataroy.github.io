@@ -350,6 +350,26 @@ ul {
         transform: translateY(-15px);
     }
 }
+@media screen and (max-width: 768px) {
+    .banner .head-link a {
+        font-size: 14px;
+        margin-left: 20px;
+        margin-bottom: 15px;
+    }
+    .banner .banner-caption h1 {
+        font-size: 25px;
+        font-weight: 600;
+    }
+    .banner .banner-caption h1 span {
+        -webkit-text-stroke: 1px #eee;
+    }
+    .cd-headline.clip span {
+        display: block;
+    }
+    .banner .banner-caption p {
+        font-size: 15px;
+    }
+}
 
 
 
@@ -362,7 +382,13 @@ ul {
 
 
 
-/*------------------ About Section ---------------*/
+
+
+
+
+
+
+/*------------------START About Section ---------------*/
 section.about .name {
     width: 100%;
     float: left;
@@ -509,6 +535,21 @@ section.about .main-btn:hover {
     background-color: #fff;
 }
 
+@media screen and (max-width: 768px) {
+    section.about .name h3 .bg {
+        display: none;
+    }
+    section.about .about-content {
+        margin-left: 0;
+        margin-top: 70px;
+    }
+    section.about {
+        padding: 100px 0 0px 0;
+    }
+}
+
+
+
 
 
 
@@ -644,6 +685,19 @@ section.resume .name span {
     top: 9px;
     opacity: .8;
   }
+
+  @media screen and (max-width: 768px) {
+    section.resume .name h3 .bg {
+        display: none;
+    }
+    section.resume .name h3 {
+        font-size: 20px;
+    }
+    section.resume {
+        padding: 70px 0;
+    }
+}
+
 /*-----------------END resume----------------*/  
 
 
@@ -796,6 +850,19 @@ section.research .research-button .main-btn {
 	transition: 0.5s;
     box-shadow: 0 0 85px 0 rgba(0, 0, 0, 0.14);
 }
+
+@media screen and (max-width: 768px) {
+    section.research .name h3 .bg {
+        display: none;
+    }
+    section.research .name h3 {
+        font-size: 20px;
+    }
+    section.research {
+        padding: 70px 0;
+    }
+}
+
 /*----------------END My Research------------------*/
 
 
@@ -846,7 +913,15 @@ section.research .research-button .main-btn {
 	letter-spacing: 1px;
     border-radius: 50px;
 }
+@media screen and (max-width: 768px) {
+    .contact h2 {
+        font-size: 30px;
+    }
+}
 /*----------------END Contact------------------*/
+
+
+
 
 
 .tagline {

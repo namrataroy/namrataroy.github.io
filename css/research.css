@@ -116,9 +116,9 @@ section.banner-blog .bread-crumb a:last-child:before {
 }
 
 .research .content-text {
-	color: #666;
-	font-size: 15px;
-	line-height: 28px;
+    color: #666;
+    font-size: 15px;
+    line-height: 28px;
 }
 
 .content-details p a {
@@ -127,7 +127,21 @@ section.banner-blog .bread-crumb a:last-child:before {
 
 
 @media screen and (max-width: 991px) {
-  .content-details p {
-    margin-top: 10px;
+    .content-details p {
+        margin-top: 10px;
+    }
 }
+
+
+@media screen and (max-width: 768px) {
+    .research .content-title {
+        font-size: 20px;
+        margin: 1rem 0;
+    }
+    .research {
+        padding: 2rem 0;
+    }
+    section.banner-blog .banner-caption h1 {
+        font-size: 35px;
+    }
 }
