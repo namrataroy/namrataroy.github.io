@@ -438,15 +438,20 @@ section.about .about-img {
     position: relative;
 }
 
-section.about .about-img:before {
-    content: "";
-    background-color: #f2f2f2;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    bottom: -10%;
-    left: -10%;
-    z-index: 0;
+section.about .about-img::before {
+	content: "";
+	background-color: #f2f2f2;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	bottom: -5%;
+	left: -7%;
+	z-index: 0;
+	/*
+	background-image: url(../images/creative2-banner-bg2.jpg);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;*/
 }
 
 section.about .about-img img {
@@ -455,6 +460,17 @@ section.about .about-img img {
     z-index: 1;
     -webkit-box-shadow: 0 0 85px 0 rgba(0, 0, 0, 0.14);
     box-shadow: 0 0 85px 0 rgba(0, 0, 0, 0.14);
+    animation: MoveUpDown 5s linear infinite;
+ 
+}
+
+@keyframes MoveUpDown {
+  0%, 100% {
+    bottom: 0;
+  }
+  50% {
+    bottom: 20px;
+  }
 }
 
 section.about .about-content {
@@ -527,12 +543,15 @@ section.about .main-btn {
     margin-top: 20px;
     text-decoration: none;
     transition: 0.5s;
+    box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.2);
 }
 
 section.about .main-btn:hover {
     color: #000;
     border: 2px solid #000;
     background-color: #fff;
+    margin-left: 5px;
+    box-shadow: none;
 }
 
 @media screen and (max-width: 768px) {
@@ -642,7 +661,11 @@ section.resume .name span {
     border-radius: 50%;
     color: #fff;
     background-color: #252525;
+    box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.5);
   }
+
+
+
   .resume .resume-box .time {
 	color: #000;
 	font-size: 14px;
@@ -758,6 +781,13 @@ section.research .research-box  {
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.14);
     border-radius: 10px;
     margin-bottom: 25px;
+    transition: 0.5s;
+    border: 1px solid #fff;
+}
+section.research .research-box:hover  {
+    box-shadow: none;
+    border: 1px solid #000;
+    transition: 0.5s;
 }
 section.research .research-box .details {
     border-top: 1px solid #eee;
