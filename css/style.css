@@ -1,7 +1,15 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 html {
@@ -31,9 +39,9 @@ ul {
 /*------------------*/
 /*particles*/
 #particles-js {
-	height: 100%;
-	background-color: transparent;
-	z-index: 9;
+    height: 100%;
+    background-color: transparent;
+    z-index: 9;
     position: relative;
 }
 
@@ -159,23 +167,22 @@ ul {
     z-index: 9;
 }
 .banner .head-link a {
-	color: #eee;
-	font-size: 16px;
-	display: inline-block;
-	margin-left: 50px;
-	text-decoration: none;
-	letter-spacing: 1px;
-	text-transform: uppercase;
-	-webkit-transition: 0.5s;
-	-o-transition: 0.5s;
-	transition: 0.5s;
+    color: #eee;
+    font-size: 16px;
+    display: inline-block;
+    margin-left: 50px;
+    text-decoration: none;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
 }
 .banner .head-link a:first-child {
-	margin-left: 0px;
+    margin-left: 0px;
 }
 .banner {
     width: 100%;
-    -webkit-background-size: cover;
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
@@ -199,14 +206,16 @@ ul {
 }
 
 .banner .banner-caption {
-	color: #eee;
-	z-index: 11;
-	width: 90%;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	text-align: center;
+    color: #eee;
+    z-index: 11;
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 .banner .banner-caption h1 {
@@ -288,13 +297,15 @@ ul {
 }
 
 .arrow {
-	position: absolute;
-	bottom: 10vh;
-	z-index: 20;
-	position: absolute;
-	bottom: 4%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+    position: absolute;
+    bottom: 10vh;
+    z-index: 20;
+    position: absolute;
+    bottom: 4%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
 }
 
 .arrow a {
@@ -439,19 +450,19 @@ section.about .about-img {
 }
 
 section.about .about-img::before {
-	content: "";
-	background-color: #f2f2f2;
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	bottom: -5%;
-	left: -7%;
-	z-index: 0;
-	/*
-	background-image: url(../images/creative2-banner-bg2.jpg);
-	background-size: cover;
-	background-position: center;
-	background-attachment: fixed;*/
+    content: "";
+    background-color: #f2f2f2;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: -5%;
+    left: -7%;
+    z-index: 0;
+    /*
+    background-image: url(../images/creative2-banner-bg2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;*/
 }
 
 section.about .about-img img {
@@ -460,8 +471,18 @@ section.about .about-img img {
     z-index: 1;
     -webkit-box-shadow: 0 0 85px 0 rgba(0, 0, 0, 0.14);
     box-shadow: 0 0 85px 0 rgba(0, 0, 0, 0.14);
-    animation: MoveUpDown 5s linear infinite;
+    -webkit-animation: MoveUpDown 5s linear infinite;
+            animation: MoveUpDown 5s linear infinite;
  
+}
+
+@-webkit-keyframes MoveUpDown {
+  0%, 100% {
+    bottom: 0;
+  }
+  50% {
+    bottom: 20px;
+  }
 }
 
 @keyframes MoveUpDown {
@@ -487,23 +508,29 @@ section.about .about-content .social-icons {
 }
 
 section.about .about-content .social-icons a {
-	display: inline-flex;
-	font-size: 20px;
-	line-height: 26px;
-	text-align: center;
-	margin-right: 10px;
-	background-color: #222;
-	-webkit-border-radius: 50%;
-	border-radius: 50%;
-	border: 2px solid #222;
-	width: 50px;
-	height: 50px;
-	-webkit-transition: .2s all ease;
-	-o-transition: .2s all ease;
-	transition: .2s all ease;
-	box-shadow: 0 0 85px 0 rgba(0, 0, 0, 0.14);
-	justify-content: center;
-	align-items: center;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: center;
+    margin-right: 10px;
+    background-color: #222;
+    border-radius: 50%;
+    border: 2px solid #222;
+    width: 50px;
+    height: 50px;
+    -webkit-transition: .2s all ease;
+    -o-transition: .2s all ease;
+    transition: .2s all ease;
+    -webkit-box-shadow: 0 0 85px 0 rgba(0, 0, 0, 0.14);
+            box-shadow: 0 0 85px 0 rgba(0, 0, 0, 0.14);
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     text-decoration: none;
 }
 
@@ -542,8 +569,11 @@ section.about .main-btn {
     cursor: pointer;
     margin-top: 20px;
     text-decoration: none;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
     transition: 0.5s;
-    box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.2);
+            box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.2);
 }
 
 section.about .main-btn:hover {
@@ -551,7 +581,8 @@ section.about .main-btn:hover {
     border: 2px solid #000;
     background-color: #fff;
     margin-left: 5px;
-    box-shadow: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
 }
 
 @media screen and (max-width: 768px) {
@@ -580,7 +611,7 @@ section.about .main-btn:hover {
 
 /*------------------START resume--------------*/
 section.resume {
-	padding: 100px 0;
+    padding: 100px 0;
 }
 section.resume .name {
     width: 100%;
@@ -661,22 +692,23 @@ section.resume .name span {
     border-radius: 50%;
     color: #fff;
     background-color: #252525;
-    box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.5);
+            box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.5);
   }
 
 
 
   .resume .resume-box .time {
-	color: #000;
-	font-size: 14px;
-	padding: 1px 12px;
-	display: inline-block;
-	margin-bottom: 12px;
-	border-radius: 20px;
-	font-weight: 600;
-	background-color: #eee;
-	opacity: .8;
-	letter-spacing: 0.5px;
+    color: #000;
+    font-size: 14px;
+    padding: 1px 12px;
+    display: inline-block;
+    margin-bottom: 12px;
+    border-radius: 20px;
+    font-weight: 600;
+    background-color: #eee;
+    opacity: .8;
+    letter-spacing: 0.5px;
 }
   
   .resume .resume-box h5 {
@@ -741,7 +773,7 @@ section.resume .name span {
 
 /*----------------START My Research------------------*/
 section.research {
-	padding: 150px 0 100px 0;
+    padding: 150px 0 100px 0;
 }
 section.research a {
     text-decoration: none;
@@ -778,15 +810,21 @@ section.research .name span {
     padding-top: 10px;
 }
 section.research .research-box  {
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.14);
+    -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.14);
+            box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.14);
     border-radius: 10px;
     margin-bottom: 25px;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
     transition: 0.5s;
     border: 1px solid #fff;
 }
 section.research .research-box:hover  {
-    box-shadow: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
     border: 1px solid #000;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
     transition: 0.5s;
 }
 section.research .research-box .details {
@@ -801,22 +839,23 @@ section.research .research-box .image img {
     height: 200px;
 }
 section.research .research-box .title {
-	margin: 0;
-	font-size: 16px;
-	font-weight: 600;
-	margin-bottom: 10px;
-	color: #fff;
-	line-height: 1.4;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	display: -webkit-box;
-	-webkit-line-clamp: 2;
-	-webkit-box-orient: vertical;
-	padding: 10px 20px;
-	border-bottom: 1px solid #eee;
-	/* text-shadow: 1px 0px 10px #eee; */
-	background-color: #333;
-	border-radius: 10px 10px 0 0;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #fff;
+    line-height: 1.4;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+       text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    padding: 10px 20px;
+    border-bottom: 1px solid #eee;
+    /* text-shadow: 1px 0px 10px #eee; */
+    background-color: #333;
+    border-radius: 10px 10px 0 0;
 }
 section.research .research-box .details p {
     font-size: 14px;
@@ -838,8 +877,6 @@ section.research .research-box .details .read-btn a{
     display: inline-block;
     padding-left: 0;
     -webkit-transition: all .3s ease;
-    -moz-transition: all .3s ease;
-    -ms-transition: all .3s ease;
     -o-transition: all .3s ease;
     transition: all .3s ease;
 }
@@ -854,10 +891,10 @@ section.research .research-box .details .read-btn a:before {
     background-color: #000;
     left: 0;
     top: 50%;
-    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
     -webkit-transition: all .3s ease;
-    -moz-transition: all .3s ease;
-    -ms-transition: all .3s ease;
     -o-transition: all .3s ease;
     transition: all .3s ease;
 }
@@ -865,20 +902,23 @@ section.research .research-box .details .read-btn a:hover:before {
     width: 35px;
 }
 section.research .research-button .main-btn {
-	display: inline-block;
-	background-color: #000;
-	padding: 15px 50px;
-	border: 2px solid #000;
-	color: #fff;
-	text-transform: uppercase;
-	font-size: 15px;
-	border-radius: 50px;
-	font-weight: 600;
-	cursor: pointer;
-	margin-top: 20px;
-	text-decoration: none;
-	transition: 0.5s;
-    box-shadow: 0 0 85px 0 rgba(0, 0, 0, 0.14);
+    display: inline-block;
+    background-color: #000;
+    padding: 15px 50px;
+    border: 2px solid #000;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 15px;
+    border-radius: 50px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 20px;
+    text-decoration: none;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    -webkit-box-shadow: 0 0 85px 0 rgba(0, 0, 0, 0.14);
+            box-shadow: 0 0 85px 0 rgba(0, 0, 0, 0.14);
 }
 
 @media screen and (max-width: 768px) {
@@ -906,9 +946,9 @@ section.research .research-button .main-btn {
 
 /*----------------START Contact------------------*/
 .contact {
-	padding: 3em 0;
-	text-align: center;
-	background: #000;
+    padding: 3em 0;
+    text-align: center;
+    background: #000;
     background: url(../images/creative2-banner-bg.jpg);
     background-attachment: fixed;
     background-position: center;
@@ -916,31 +956,31 @@ section.research .research-button .main-btn {
     background-size: cover;
 }
 .contact h2 {
-	color: #fff;
-	font-size: 40px;
-	font-weight: 900;
+    color: #fff;
+    font-size: 40px;
+    font-weight: 900;
 }
 .contact h2 span {
-	color: #aaa;
+    color: #aaa;
 }
 .contact .contact-btn {
-	display: inline-block;
-	background-color: #eee;
-	padding: 10px 40px;
-	border: 2px solid #eee;
-	color: #222;
-	-webkit-transition: .2s background-color ease;
-	-o-transition: .2s background-color ease;
-	transition: .2s background-color ease;
-	font-size: 15px;
-	font-weight: 600;
-	cursor: pointer;
-	margin-top: 20px;
-	text-decoration: none;
-	-webkit-transition: 0.5s;
-	-o-transition: 0.5s;
-	transition: 0.5s;
-	letter-spacing: 1px;
+    display: inline-block;
+    background-color: #eee;
+    padding: 10px 40px;
+    border: 2px solid #eee;
+    color: #222;
+    -webkit-transition: .2s background-color ease;
+    -o-transition: .2s background-color ease;
+    transition: .2s background-color ease;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 20px;
+    text-decoration: none;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    letter-spacing: 1px;
     border-radius: 50px;
 }
 @media screen and (max-width: 768px) {
@@ -955,8 +995,8 @@ section.research .research-button .main-btn {
 
 
 .tagline {
-	background-color: #111;
-	padding: 10px 0;
+    background-color: #111;
+    padding: 10px 0;
     text-align: center;
     color: #aaa;
 }

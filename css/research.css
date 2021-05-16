@@ -1,7 +1,15 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 html {
@@ -30,7 +38,6 @@ ul {
 section.banner-blog {
     height: 40vh;
     width: 100%;
-    -webkit-background-size: cover;
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
@@ -76,15 +83,6 @@ section.banner-blog .bread-crumb a:before {
 section.banner-blog .bread-crumb a:last-child:before {
     display: none;
 }
-
-
-
-
-
-
-
-
-
 
 
 
