@@ -25,6 +25,12 @@ ul {
     padding: 0
 }
 
+
+:root {
+    --primary-color: #222222;
+    --secondary-color: #eeeeee;
+}
+
 section.banner-blog {
     height: 40vh;
     width: 100%;
@@ -48,7 +54,7 @@ section.banner-blog .banner-caption {
 }
 
 section.banner-blog .banner-caption h1 {
-    color: #eee;
+    color: var(--secondary-color);
     font-size: 48px;
     font-weight: 700;
     text-transform: uppercase
@@ -83,7 +89,7 @@ section.banner-blog .bread-crumb a:last-child:before {
 }
 
 .research .content-title {
-    color: #000;
+    color: var(--primary-color);
     text-transform: uppercase;
     font-weight: 900;
     font-size: 35px;
@@ -91,7 +97,7 @@ section.banner-blog .bread-crumb a:last-child:before {
 }
 
 .research .content-text {
-    color: #666;
+    color: var(--primary-color);
     font-size: 18px;
     line-height: 28px
 }
