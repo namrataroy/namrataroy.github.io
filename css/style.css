@@ -275,6 +275,7 @@ section.services .dls-card p {
     text-align: center;
     margin-right: 10px;
     background-color: var(--theme-bg-color);
+
     border-radius: 50%;
     border: 1px solid var(--theme-bg-color);
     width: 40px;
@@ -289,8 +290,8 @@ section.services .dls-card p {
     text-decoration: none
 }
 
-.social-icons a .fa {
-    color: #fff;
+.social-icons a i {
+    color: var(--secondary-color);
     -webkit-transition: .2s all ease;
     -o-transition: .2s all ease;
     transition: .2s all ease
@@ -612,7 +613,7 @@ section.research .content-text {
 
 .tagline {
     background-color: var(--primary-color);
-    padding: 10px 0;
+    padding: 20px 0;
 }
 
 .tagline h6 {
