@@ -567,8 +567,28 @@ section.research .content-text {
 
 
 
+section.publications {
+    padding: 5rem 0;
+}
+
+section.publications h1 {
+    color: var(--secondary-color);
+    font-weight: 700;
+    font-size: 30px;
+    margin: 2rem 0;
+}
 
 
+section.broader-impacts {
+    padding: 5rem 0;
+}
+
+section.broader-impacts h1 {
+    color: var(--secondary-color);
+    font-weight: 700;
+    font-size: 30px;
+    margin: 2rem 0;
+}
 
 
 
@@ -577,14 +597,14 @@ section.brief-bio-data {
     padding: 5rem 0;
 }
 
-.brief-bio-data h1 {
+section.brief-bio-data h1 {
     color: var(--secondary-color);
     font-weight: 700;
     font-size: 30px;
     margin: 2rem 0;
 }
 
-.brief-bio-data h2 {
+section.brief-bio-data h2 {
     color: var(--theme-main-color);
     font-weight: 500;
     font-size: 18px;
@@ -593,11 +613,11 @@ section.brief-bio-data {
     margin: 1rem 0;
 }
 
-.brief-bio-data ul {
+section.brief-bio-data ul {
     padding-left: 20px;
 }
 
-.brief-bio-data ul li {
+section.brief-bio-data ul li {
     color: var(--secondary-color);
     margin-bottom: 10px;
 }
