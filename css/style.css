@@ -187,6 +187,7 @@ ul {
     color: var(--theme-main-color);
     text-decoration: none;
     transition: 0.5s;
+    margin-top: 20px;
 }
 
 .banner .banner-caption .cv-main-btn:hover {
@@ -196,7 +197,7 @@ ul {
 
 
 .banner-social-icons {
-    margin-top: 20px;
+    margin-top: 40px;
     display: flex;
     gap: 15px;
 }
