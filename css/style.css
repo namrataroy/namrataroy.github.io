@@ -56,9 +56,14 @@ ul {
     --primary-color: #191923;
     --secondary-color: #e2e8f0;
     --theme-main-color: #f0e68c;
+    --theme-focus-color: #9bf1ff;
     --theme-slate-color: #475569;
     --theme-white-color: #ffffff;
     --theme-bg-color: #2C2C38;
+}
+
+.theme-main-color {
+    color: #f0e68c;
 }
 
 
@@ -517,9 +522,10 @@ section.research .content-text {
 }
 
 .contact h2 {
-    color: #fff;
-    font-size: 30px;
-    font-weight: 600
+    color: var(--secondary-color);
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
 }
 
 .contact h2 span {
@@ -578,6 +584,40 @@ section.publications h1 {
     margin: 2rem 0;
 }
 
+section.publications h2 {
+    color: var(--theme-main-color);
+    font-weight: 500;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 1rem 0;
+}
+
+section.publications ol {
+    padding-left: 20px;
+}
+
+section.publications ol li {
+    color: var(--secondary-color);
+    margin-bottom: 30px;
+}
+
+section.publications ol li a {
+    border-bottom: dotted 1px var(--theme-main-color);
+    color: var(--secondary-color);
+    text-decoration: none;
+    line-height: 30px;
+    transition: 0.5s;
+    font-weight: 300;
+}
+
+section.publications ol li a:hover {
+    border-bottom: dotted 1px var(--theme-bg-color);
+    color: var(--theme-focus-color);
+}
+
+
+
 
 section.broader-impacts {
     padding: 5rem 0;
@@ -620,4 +660,5 @@ section.brief-bio-data ul {
 section.brief-bio-data ul li {
     color: var(--secondary-color);
     margin-bottom: 10px;
+    font-weight: 300;
 }
