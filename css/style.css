@@ -662,3 +662,86 @@ section.brief-bio-data ul li {
     margin-bottom: 10px;
     font-weight: 300;
 }
+
+/* =========================================================
+   Homepage banner: faint landscape + portrait panel
+   Keeps the original website layout.
+   ========================================================= */
+
+.banner {
+    /* Keep the original large landscape image behind everything */
+    background-image: url(../images/creative2-banner-bg2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-attachment: fixed;
+    background-color: var(--primary-color);
+    overflow: hidden;
+    position: relative;
+}
+
+/* Dark overlay over the full landscape image.
+   Lower opacity here makes the landscape more visible. */
+.banner::before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background:
+        linear-gradient(90deg,
+            rgba(25, 25, 35, 0.90) 0%,
+            rgba(25, 25, 35, 0.76) 45%,
+            rgba(25, 25, 35, 0.46) 100%);
+    z-index: -1;
+    opacity: 0.6;
+}
+
+/* Portrait version of the same image on the right. */
+.banner::after {
+    content: "";
+    position: absolute;
+    right: 9%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: min(34vw, 370px);
+    aspect-ratio: 3 / 4;
+    background-image: url(../images/creative2-banner-bg4.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 32px;
+    border: 1px solid rgba(240, 230, 140, 0.45);
+    box-shadow: 0 28px 70px rgba(0, 0, 0, 0.45);
+    z-index: 0;
+}
+
+/* Keep text/buttons above the portrait panel. */
+.banner .container {
+    position: relative;
+    z-index: 1;
+}
+
+.banner .banner-caption {
+    max-width: 58%;
+}
+
+/* Mobile: keep homepage clean and avoid overlap */
+@media screen and (max-width: 991px) {
+    .banner::after {
+        opacity: 0.25;
+        right: -40px;
+        width: 300px;
+        z-index: 0;
+    }
+
+    .banner .banner-caption {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .banner::after {
+        display: none;
+    }
+}
