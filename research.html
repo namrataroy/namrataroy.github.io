@@ -2,228 +2,543 @@
 <html>
 
 <head>
-    <title>Namrata Roy</title>
+    <title>Namrata Roy | Research</title>
     <meta charset="UTF-8">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
+    <meta name="description" content="Research themes of Namrata Roy: AGN feedback, radio jets, baryon cycle, ISM/CGM, LyC escape, and galaxy evolution.">
+    <meta name="keywords" content="AGN feedback, galaxy evolution, radio galaxies, red geysers, JWST, HST, CGM, ISM, Lyman continuum, blazars">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Latest compiled and minified CSS -->
+    <!-- Bootstrap and icons: keep consistent with your current website -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!--font-awasome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css">
 
-    <!--font-family-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,400;1,500&display=swap"
         rel="stylesheet">
 
-    <!--custom css-->
     <link href="css/style.css" rel="stylesheet" type="text/css">
 
-    <!-- jQuery library -->
+    <style>
+        /* Dark theme consistent with your existing website */
+        :root {
+            --primary-color: #191923;
+            --secondary-color: #e2e8f0;
+            --theme-main-color: #f0e68c;
+            --theme-focus-color: #9bf1ff;
+            --theme-slate-color: #94a3b8;
+            --theme-white-color: #ffffff;
+            --theme-bg-color: #2C2C38;
+        }
+
+        body {
+            background-color: var(--primary-color);
+            color: var(--secondary-color);
+        }
+
+        a {
+            color: var(--theme-main-color);
+        }
+
+        a:hover {
+            color: var(--theme-focus-color);
+        }
+
+        .research-hero {
+            padding: 90px 0 45px 0;
+            background: var(--primary-color);
+            border-bottom: 1px solid rgba(240, 230, 140, 0.18);
+        }
+
+        .research-hero h1 {
+            font-size: 42px;
+            font-weight: 700;
+            margin-bottom: 18px;
+            color: var(--theme-main-color);
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+
+        .research-hero p {
+            max-width: 950px;
+            margin: 0 auto;
+            font-size: 17px;
+            line-height: 1.8;
+            color: var(--secondary-color);
+            font-weight: 300;
+        }
+
+        .theme-nav {
+            padding: 22px 0;
+            background: var(--primary-color);
+            border-bottom: 1px solid rgba(240, 230, 140, 0.15);
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        .theme-nav a {
+            display: inline-block;
+            margin: 5px 7px;
+            padding: 8px 15px;
+            border-radius: 999px;
+            background: var(--theme-bg-color);
+            border: 1px solid rgba(240, 230, 140, 0.25);
+            color: var(--theme-main-color);
+            text-decoration: none;
+            font-size: 14px;
+            transition: all 0.2s ease-in-out;
+        }
+
+        .theme-nav a:hover {
+            background: rgba(240, 230, 140, 0.12);
+            border-color: var(--theme-main-color);
+            color: var(--theme-focus-color);
+        }
+
+        .research-card-grid {
+            padding: 45px 0 20px 0;
+            background: var(--primary-color);
+        }
+
+        .mini-card {
+            background: var(--theme-bg-color);
+            border: 1px solid rgba(240, 230, 140, 0.18);
+            border-radius: 0;
+            padding: 24px;
+            height: 100%;
+            box-shadow: none;
+            transition: 0.3s;
+        }
+
+        .mini-card:hover {
+            border-color: var(--theme-main-color);
+        }
+
+        .mini-card h4 {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 12px;
+            color: var(--theme-main-color);
+        }
+
+        .mini-card p {
+            font-size: 14px;
+            line-height: 1.7;
+            color: var(--secondary-color);
+            font-weight: 300;
+        }
+
+        .research-theme {
+            padding: 65px 0;
+            background: var(--primary-color);
+            border-bottom: 1px solid rgba(240, 230, 140, 0.12);
+        }
+
+        .research-theme:nth-of-type(even) {
+            background: #1f1f2a;
+        }
+
+        .research-theme h2 {
+            font-size: 30px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            color: var(--secondary-color);
+            line-height: 1.35;
+        }
+
+        .research-theme .tagline-small {
+            color: var(--theme-main-color);
+            font-size: 14px;
+            font-weight: 500;
+            margin-bottom: 16px;
+            letter-spacing: 1.8px;
+            text-transform: uppercase;
+        }
+
+        .research-theme p {
+            font-size: 16px;
+            line-height: 1.85;
+            color: var(--secondary-color);
+            margin-bottom: 15px;
+            font-weight: 300;
+        }
+
+        .research-theme img {
+            border-radius: 0;
+            border: 1px solid rgba(240, 230, 140, 0.25);
+            box-shadow: 0 18px 40px rgba(0,0,0,0.32);
+            background: var(--theme-bg-color);
+        }
+
+        .paper-links {
+            margin-top: 18px;
+            padding: 16px 18px;
+            background: var(--theme-bg-color);
+            border-left: 3px solid var(--theme-main-color);
+            font-size: 15px;
+            line-height: 1.75;
+            color: var(--secondary-color);
+        }
+
+        .paper-links a {
+            font-weight: 600;
+            text-decoration: none;
+            color: var(--theme-main-color);
+        }
+
+        .paper-links a:hover {
+            color: var(--theme-focus-color);
+        }
+
+        .figure-note {
+            font-size: 13px !important;
+            color: var(--theme-slate-color) !important;
+            margin-top: 12px;
+            line-height: 1.55 !important;
+            font-weight: 300 !important;
+        }
+
+        .contact {
+            background-color: var(--primary-color);
+        }
+
+        .tagline {
+            background-color: var(--primary-color);
+        }
+
+        @media (max-width: 768px) {
+            .research-hero {
+                padding: 65px 0 35px 0;
+            }
+
+            .research-hero h1 {
+                font-size: 30px;
+            }
+
+            .research-hero p {
+                font-size: 15px;
+            }
+
+            .research-theme {
+                padding: 45px 0;
+            }
+
+            .research-theme h2 {
+                font-size: 24px;
+                margin-top: 20px;
+            }
+
+            .theme-nav {
+                position: relative;
+            }
+        }
+    </style>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-
 </head>
-
-
-
-
 
 <body>
 
+    <!-- Optional: keep your site's navbar here if you have one -->
 
-    <!---------------START My Research---------------->
-    <section class="research" id="research">
+    <section class="research-hero text-center">
         <div class="container">
-            <div class="row">
-                <div class="col-12 text-center">
-                    <div class="name">
-                        <h3>Research Overview </h3>
-                        <span>A summary of My Research</span>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <a href="research1.html">
-                        <div class="research-box">
-                            <div class="image">
-                                <img src="images/Research_1.jpeg" alt="" class="img-fluid">
-                            </div>
-                            <h3 class="title">Blazar Variability
-                            </h3>
-                            <div class="details">
-                                <p> I looked at gamma-ray lightcurves from Fermi Gamma Ray Space Telescope and optical
-                                    light-curves from the YALE/SMARTS monitoring program to investigate blazar
-                                    variability.
-                                </p>
-                                <div class="read-btn">
-                                    <a href="research1.html">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-6">
-                    <a href="research2.html">
-                        <div class="research-box">
-                            <div class="image">
-                                <img src="images/Research_2.jpg" alt="" class="img-fluid">
-                            </div>
-                            <h3 class="title">Red Geysers </h3>
-
-                            <div class="details">
-                                <p>What are red geysers? I describe the unique characteristics of these galaxies and
-                                    discuss
-                                    how to identify them.
-                                </p>
-                                <div class="read-btn">
-                                    <a href="research2.html">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-6">
-                    <a href="research3.html">
-                        <div class="research-box">
-                            <div class="image">
-                                <img src="images/Research_3.jpeg" alt="" class="img-fluid">
-                            </div>
-                            <h3 class="title">Radio AGN in Red Geysers </h3>
-
-                            <div class="details">
-                                <p> Low-luminosity Radio-mode AGN found in early type passive galaxies which host
-                                    AGN-driven
-                                    winds. I am also looking at the morphology and extent of the radio continuum
-                                    emission
-                                    using LOFAR, VLASS and FIRST.</p>
-                                <div class="read-btn">
-                                    <a href="research3.html">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="col-md-6">
-                    <a href="research4.html">
-                        <div class="research-box">
-                            <div class="image">
-                                <img src="images/Research_4.png" alt="" class="img-fluid">
-                            </div>
-                            <h3 class="title">Large-scale outflowing wind
-                            </h3>
-
-                            <div class="details">
-                                <p> I use spatially resolved MaNGA IFU and Keck ESI data to look at detailed Ionized gas
-                                    kinematics (Ha, [NII]) and emission line profiles to confirm the radially outflowing
-                                    nature of the gas entrained in wind.
-                                </p>
-                                <div class="read-btn">
-                                    <a href="research4.html">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-6">
-                    <a href="research5.html">
-                        <div class="research-box">
-                            <div class="image">
-                                <img src="images/Research_5.jpeg" alt="" class="img-fluid">
-                            </div>
-                            <h3 class="title">Inflowing cool gas in red geysers
-                            </h3>
-
-                            <div class="details">
-                                <p> I see signatures of cool neutral gas inflowing and possibly fueling the
-                                    low-luminosity AGNs in red geysers. I use NaD absorption line to trace the cool and
-                                    clumpy gas dynamics.
-                                </p>
-                                <div class="read-btn">
-                                    <a href="research5.html">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-6">
-                    <a href="research6.html">
-                        <div class="research-box">
-                            <div class="image">
-                                <img src="images/Research_6.jpeg" alt="" class="img-fluid">
-                            </div>
-                            <h3 class="title">Comparing observations with simulations </h3>
-
-                            <div class="details">
-                                <p> I use cosmological zoom-in and Isolated galaxy simulations to understand various
-                                    aspects of star formation, stellar feedback, AGN feedback in a wide range of
-                                    galaxies.
-                                </p>
-                                <div class="read-btn">
-                                    <a href="research6.html">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <!-- <div class="row">
-                <div class="col-md-12 text-center mt-4">
-                    <span class="research-button">
-                        <a class="main-btn" href="research.html" target="_blank">View All Research</a>
-                    </span>
-                </div>
-            </div> -->
+            <h1>Research</h1>
+            <p>
+                I study how galaxies acquire, transform, expel, and recycle gas across cosmic time. My work connects
+                star formation and black-hole feedback, relativistic jets, outflows, the interstellar and circumgalactic
+                baryon cycle, and the escape of ionizing photons using multi-wavelength observations from JWST, HST,
+                Keck, Magellan, VLT, GMRT, LOFAR, VLA, DESI, MaNGA and large spectroscopic surveys.
+            </p>
         </div>
     </section>
-    <!---------------END My Research---------------->
+
+    <section class="theme-nav text-center">
+        <div class="container">
+            <a href="#jets-highz">Powerful radio galaxies</a>
+            <a href="#red-geysers">Weak active galactic nuclei</a>
+            <a href="#cgm">CGM baryon cycle</a>
+            <a href="#msa3d">Resolved ISM at cosmic noon</a>
+            <a href="#lyc">First ionizing photons</a>
+            <a href="#multiwavelength">Multi-wavelength synthesis</a>
+            <a href="#blazars">Blazars</a>
+        </div>
+    </section>
+
+    <section class="research-card-grid">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="mini-card">
+                        <h4>Central questions</h4>
+                        <p>What decides a galaxy's fate? What roles do black holes play in regulating gas flows, star formation, and galaxy growth? How do galaxies evolve over cosmic time?</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="mini-card">
+                        <h4>Core approach</h4>
+                        <p>I combine spatially resolved IFU and high resolution spectroscopy, absorption/emission-line diagnostics, multi wavelength  (radio, UV, optical, IR, ) imaging, and theoretical modeling/ simulations.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="mini-card">
+                        <h4>Physical scales</h4>
+                        <p>My work links more than 5 orders of magnitude in spatial scale from sub-kpc ISM gas to
+            hundred-kpc CGM halos, across redshifts from z ∼ 0 to the end of reionization at z &gt; 6. I track
+             multi-phase gas over a broad range of temperatures and densities.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
+    <!-- 1. High-z radio galaxies -->
+    <section class="research-theme" id="jets-highz">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-5 text-center">
+                    <!-- Replace with your best JWST/radio/outflow composite or W80 map -->
+                    <img src="images/jwst_radio_jets.png" alt="JWST and radio view of high-redshift radio-galaxy feedback" class="img-fluid">
+                    <p class="figure-note">JWST/NIRSpec IFU emission line map with radio contours overlaid shows powerful feedback and large-scale outflows co-spatial with radio lobes.</p>
+                </div>
+                <div class="col-lg-7">
+                    <div class="tagline-small">Relativistic jets, ionized outflows, and early massive galaxies</div>
+                    <h2>Powerful radio galaxies: jet feedback in the early Universe</h2>
+                    <p>
+                        Massive galaxies in the early Universe often host rapidly growing black holes and powerful radio jets. I use JWST/NIRSpec integral-field spectroscopy to map how these jets interact with dense interstellar gas, drive fast ionized outflows, and redistribute energy during the epoch when massive galaxies and their black holes are assembling most rapidly.
+                    </p>
+                    <p>
+                        In TN J1338-1942 at z = 4.1, we spatially resolved a roughly 15 kpc ionized outflow, with velocities exceeding 900 km/s, line widths above 1200 km/s, and an integrated warm-ionized mass outflow rate of roughly 500 solar masses per year. The outflow overlaps the brightest radio lobe, pointing to radio-jet-driven feedback. In a larger JWST/NIRSpec sample of z ~ 3.5-4 radio galaxies, we find broad [O III] emission, jet-aligned nebulae, and ionized outflow masses of order 10^9 solar masses.
+                    </p>
+                    <div class="paper-links">
+                        Key papers:
+                        <a target="_blank" href="https://ui.adsabs.harvard.edu/abs/2024ApJ...970...69R/abstract">Roy et al. 2024</a>,
+                        <a target="_blank" href="https://arxiv.org/abs/2508.06707">Roy et al. 2025</a>,
+                        <a target="_blank" href="https://ui.adsabs.harvard.edu/abs/2024MNRAS.531.4391S/abstract">Saxena et al. 2024</a>.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
+    <!-- 2. Red geysers -->
+    <section class="research-theme" id="red-geysers">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-7">
+                    <div class="tagline-small">Maintenance-mode feedback in nearby quiescent galaxies</div>
+                    <h2>Red geysers: fountains from weak black hole driven winds</h2>
+                    <p>
+                        Red geysers are quiescent early-type galaxies with weak but persistent ionized gas outflows. They provide a nearby laboratory for studying how low-luminosity black holes may keep galaxies dormant without the dramatic quasar-like feedback seen in luminous AGN.
+                    </p>
+                    <p>
+                        My work connects three parts of the same feedback cycle: radio-mode AGN activity, galaxy-scale ionized winds, and cool neutral gas that may fuel the central engine. Using MaNGA, Keck/ESI, LOFAR, FIRST, VLASS, and Na I D absorption, I showed that red geysers host enhanced low-luminosity radio emission, kpc-scale ionized wind signatures, and substantial cool gas reservoirs. The cool gas is often inflowing rather than outflowing, suggesting a self-regulated cycle in which gas accretion feeds weak radio AGN activity, while the resulting feedback suppresses star formation.
+                    </p>
+                    <div class="paper-links">
+                        Key papers:
+                        <a target="_blank" href="https://ui.adsabs.harvard.edu/abs/2018ApJ...869..117R/abstract">Roy et al. 2018</a>,
+                        <a target="_blank" href="https://ui.adsabs.harvard.edu/abs/2021ApJ...913...33R/abstract">Roy et al. 2021a</a>,
+                        <a target="_blank" href="https://ui.adsabs.harvard.edu/abs/2021ApJ...919..145R/abstract">Roy et al. 2021b</a>,
+                        <a target="_blank" href="https://ui.adsabs.harvard.edu/abs/2021ApJ...922..230R/abstract">Roy et al. 2021c</a>,
+                        <a target="_blank" href="https://ui.adsabs.harvard.edu/abs/2026arXiv260413195M/abstract">Moghni, Roy et al. 2026</a>.
+                    </div>
+                </div>
+                <div class="col-lg-5 text-center">
+                    <!-- You can use an existing multi-panel red-geyser figure here -->
+                    <img src="images/red_geyser_cycle.png" alt="Red geyser feedback cycle: radio AGN, ionized wind, and cool gas inflow" class="img-fluid">
+                    <p class="figure-note">SDSS-IV MaNGA IFU data of a nearby red geyser galaxy, showing simultaneous outflowing ionized wind and infalling cool neutral gas, tracing a galactic fountain.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
+    <!-- 3. CGM -->
+    <section class="research-theme" id="cgm">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-5 text-center">
+                    <img src="images/cgm_feedback.png" alt="Jet feedback and circumgalactic gas around radio galaxies" class="img-fluid">
+                    <p class="figure-note"> (credit: TNG 50 simulations) Large CGM scale gas is highly clumpy and anisotropic, and can be substantially affected by feedback processes. </p>
+                </div>
+                <div class="col-lg-7">
+                    <div class="tagline-small">From galaxy-scale feedback to halo-scale gas regulation</div>
+                    <h2>Baryon cycle through the interstellar and the circumgalactic medium</h2>
+                    <p>
+                        A central goal of my research is to test whether star formation and black hole driven outflows regulate not only the gas inside galaxies, but also the larger circumgalactic medium, which is the extended reservoir that fuels future star formation. Population-averaged measurements can wash out directional feedback signals, especially when feedback energy couples to gas anisotropically.
+                    </p>
+                    <p>
+                        I am developing strategies that combine radio constraints, background-quasar line-of-sight UV spectroscopy, and optical/IR emission-line measurements to understand how feedback impacts multiple gas phases across five orders of magnitude spatial scales (~1 pc - 100 kpc) from ISM all the way upto the CGM. This will put a strong constraint on the total mass, momentum and energy budget of galaxies and the redistribution of baryons on halo scales.  
+                    </p>
+                    <div class="paper-links">
+                        Key papers:
+                        <a target="_blank" href="https://namrataroy.github.io/research.html">Roy et al. 2026 in prep</a>.
+                        </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <!---------------START contact---------------->
+
+    <!-- 4. MSA-3D -->
+    <section class="research-theme" id="msa3d">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-7">
+                    <div class="tagline-small">Resolved spectroscopy of star forming main sequence galaxies at z > 1</div>
+                    <h2>Resolved ISM physics at cosmic noon</h2>
+                    <p>
+                        To understand galaxy evolution, we need to map not only extreme AGN hosts but also the ordinary star-forming galaxies that build the Hubble sequence. With the JWST/NIRSpec MSA-3D survey, I study ionized gas morphology, excitation, metallicity, and kinematics in the ISM of galaxies at 0.5 &lt; z &lt; 1.7 using
+    a new slit-stepping technique that turns NIRSpec’s multi-object slitlets into IFU-like datacubes.
+</p>
+                    </p>
+                    <p>
+                        This approach is powerful because it enables spatially resolved spectroscopy for many galaxies at once,
+    making IFU-style surveys far more time-efficient than traditional one-object-at-a-time observations.
+    MSA-3D therefore demonstrates a ground-breaking observing mode that can be adapted for future
+    space-based telescopes equipped with slit spectrographs, and opens up a new path into the large spatially resolved surveys of galaxy evolution across cosmic time. My work uses these datacubes to 
+    reveal weak AGN, shocks, and low-power outflows that would be difficult to identify in
+    integrated spectra alone.
+                    </p>
+                    <div class="paper-links">
+                        Key papers:
+                        <a target="_blank" href="https://arxiv.org/abs/2510.11326">Roy et al. 2025, MSA-3D weak AGN/outflows</a>,
+                        <a target="_blank" href="https://ui.adsabs.harvard.edu/abs/2025ApJ...983..139B/abstract">Barišić et al. 2025</a>,
+                        <a target="_blank" href="https://arxiv.org/abs/2409.01616">Ju et al. 2024</a>.
+                    </div>
+                </div>
+                <div class="col-lg-5 text-center">
+                    <img src="images/msa3d_maps.png" alt="MSA-3D resolved ionization and kinematic maps" class="img-fluid">
+                    <p class="figure-note"> JWST/NIRSpec MSA-3D maps reveal weak AGN/shock-driven outflows hidden within z ∼ 1 star-forming galaxies: regions of elevated velocity dispersion align with non-stellar ionization traced by WHAN diagnostics.
+</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- 5. LyC -->
+    <section class="research-theme" id="lyc">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-5 text-center">
+                    <img src="images/lyc_escape.png" alt="Lyman continuum escape and early ionizing photons" class="img-fluid">
+                    <p class="figure-note">The fraction of LyC photons escaping into the IGM is determined by
+two main factors: H I absorption and dust attenuation. Here, LyC escape
+fractions considering only H I absorption fesc,HI are compared with those
+considering only dust attenuation fesc,dust. Most massive, compact starbursts (yellow) lie above the 1:1 line, suggesting their LyC escape fractions
+would be higher if not significantly reduced by dust attenuation. </p>
+                </div>
+                <div class="col-lg-7">
+                    <div class="tagline-small">Reionization analogs and the escape of first photons</div>
+                    <h2>How do ionizing photons escape galaxies?</h2>
+                    <p>
+                        The first stars and galaxies reionized the Universe, but the pathways by which Lyman-continuum (LyC) photons escape from dense, dusty star-forming regions into the Intergalactic Medium (IGM) remain uncertain. While answering this question can be best done in high redshift galaxies near the Epoch of Reionization (EoR), their low redshift analogs can be studied in extraordinary details, unlike their high redshift counterparts. I use HST/COS, JWST/NIRSpec, and VLT/MUSE observations of low-redshift analogs and combine that with constraints from high z ~ 3-6 Lyα emitters to test indirect diagnostics of LyC leakage.
+                    </p>
+                    <p>
+                       Here, we investigated a new class of LyC leakers at low redshift, which unlike traditional leakers, are massive, dust-heavy, and low ionization. We found that three out of five such systems leak high LyC radiation. Their dust-corrected escape fractions are high, but their absolute escape fractions are suppressed by dust, suggesting a “picket-fence” geometry in which feedback-driven channels allow ionizing photons to escape through low-column-density sightlines. 
+                    <div class="paper-links">
+                        Key papers:
+                        <a target="_blank" href="https://ui.adsabs.harvard.edu/abs/2025ApJ...992...91R/abstract">Roy et al. 2025</a>,
+                        <a target="_blank" href="https://ui.adsabs.harvard.edu/abs/2023ApJ...952L..14R/abstract">Roy et al. 2023</a>,
+                        <a target="_blank" href="https://ui.adsabs.harvard.edu/abs/2023ApJ...956...39H/abstract">Hu et al. 2023</a>.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- 6. Multiwavelength synthesis -->
+    <section class="research-theme" id="multiwavelength">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-7">
+                    <div class="tagline-small">Connecting UV, optical, infrared, and radio diagnostics</div>
+                    <h2>Multi-wavelength views of galaxy ecosystems</h2>
+                    <p>
+                        Different wavelengths reveal different pieces of the baryon cycle in galaxies. Rest-frame optical emission lines trace warm ionized gas, UV absorption probes neutral, low-ionization as well as highly ionized material, radio continuum reveals relativistic plasma and jets, infrared data constrain obscured star formation, shocks and AGN, while X-rays can reveal hot shocked gas.
+                    </p>
+                    <p>
+                        A major theme of my work is to combine these tracers into a physically coherent picture of how gas moves through galaxies and halos. This approach lets me connect emission and absorption spectroscopy, cold and warm gas, weak and powerful black holes, local galaxies and the high-redshift Universe across almost 5 orders of magnitude in physical scale.
+                    </p>
+                    <div class="paper-links">
+                        Techniques: JWST/NIRSpec, HST/COS and imaging, Keck/Magellan/VLT spectroscopy, MaNGA IFU, LOFAR/VLA, DESI/SDSS.
+                    </div>
+                </div>
+                <div class="col-lg-5 text-center">
+                    <img src="images/feedback_cartoon.jpg" alt="Multiwavelength observational view of galaxy gas cycles" class="img-fluid">
+                    <p class="figure-note">A schematic of multi-wavelength multi-scale processes in galaxy ecosystems.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- 7. Blazars -->
+    <section class="research-theme" id="blazars">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-5 text-center">
+                    <img src="images/Research_1.jpeg" alt="Blazar gamma-ray light curves" class="img-fluid">
+                    <p class="figure-note">Suggested figure: existing Fermi gamma-ray light-curve panel from your current page.</p>
+                </div>
+                <div class="col-lg-7">
+                    <div class="tagline-small">Relativistic jets viewed down the barrel</div>
+                    <h2>Blazar variability and particle acceleration</h2>
+                    <p>
+                        Blazars are active galactic nuclei whose relativistic jets are pointed almost directly toward our line of sight, making them powerful probes of particle acceleration, radiative cooling, and disk-jet coupling close to supermassive black holes.
+                    </p>
+                    <p>
+                        In my earlier work, I analyzed long- and short-timescale multi-wavelength blazar outbursts using Fermi gamma-ray light curves and Yale/SMARTS optical monitoring data. The symmetry of these flares constrains whether the observed variability is dominated by light-crossing times, acceleration, cooling, or changes in the energy-injection history of the jet.
+                    </p>
+                    <div class="paper-links">
+                        Key paper:
+                        <a target="_blank" href="https://ui.adsabs.harvard.edu/abs/2019MNRAS.482..743R/abstract">Roy et al. 2019</a>.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
     <section class="contact" id="contact">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="freelance">
-                        <h2>Have questions about my research or Astronomy in general? Feel free to <span>Email</span> Me
-                        </h2>
-
-                        <a target="_blank" href="mailto:nroy13@jhu.edu" class="contact-btn">nroy13@jhu.edu</a>
+                        <h2>Have questions about my research or astronomy in general? Feel free to <span>Email</span> me</h2>
+                        <a target="_blank" href="mailto:namratar@asu.edu" class="contact-btn">namratar@asu.edu</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!---------------END contact---------------->
-
-
-
 
     <div class="tagline">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6">
-                    <h6>Namrata Roy © 2024. All Right Reserved</h6>
+                    <h6>Namrata Roy © 2026. All Rights Reserved</h6>
                 </div>
                 <div class="col-lg-6 text-end">
                     <div class="social-icons">
-                        <a target="_blank" href="mailto:nroy13@jhu.edu"><i class="fa fa-envelope"></i></a>
-                        <a target="_blank" href="https://www.facebook.com/namrata.roy.1232/"><i
-                                class="fa fa-facebook"></i></a>
-                        <a target="_blank" href="https://x.com/Namrataroyastro"><i
-                                class="fa-brands fa-x-twitter"></i></a>
+                        <a target="_blank" href="mailto:namratar@asu.edu"><i class="fa fa-envelope"></i></a>
+                        <a target="_blank" href="https://ui.adsabs.harvard.edu/search/q=docs(library%2F7NgQFkV_Sz-RXnsYreI_Tg)&sort=date%20desc%2C%20bibcode%20desc&p_=0">
+                            <img src="images/ads_partial_logo.svg" style="height:18px;" />
+                        </a>
+                        <a target="_blank" href="https://scholar.google.com/citations?user=g0PRpMIAAAAJ&hl=en">
+                            <img src="images/google_scholar_logo.svg" style="height:18px;" />
+                        </a>
+                        <a target="_blank" href="https://x.com/Namrataroyastro"><i class="fa-brands fa-x-twitter"></i></a>
                         <a target="_blank" href="https://github.com/namrataroy"><i class="fa fa-github"></i></a>
                     </div>
                 </div>
@@ -231,12 +546,5 @@
         </div>
     </div>
 
-
-
-
 </body>
-
-
-
-
 </html>
