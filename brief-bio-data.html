@@ -26,6 +26,157 @@
     <!--custom css-->
     <link href="css/style.css" rel="stylesheet" type="text/css">
 
+    <style>
+        .brief-bio-data .cv-section {
+            margin-top: 42px;
+        }
+
+        .brief-bio-data .cv-list {
+            margin: 0;
+            padding: 0;
+        }
+
+        .brief-bio-data .cv-entry {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) 150px;
+            column-gap: 30px;
+            align-items: start;
+            padding: 0 0 18px 0;
+            margin-bottom: 18px;
+            border-bottom: 1px solid rgba(226, 232, 240, 0.12);
+            color: var(--secondary-color);
+            font-weight: 300;
+            line-height: 1.8;
+        }
+
+        .brief-bio-data .cv-entry:last-child {
+            border-bottom: none;
+        }
+
+        .brief-bio-data .cv-left {
+            color: var(--secondary-color);
+        }
+
+        .brief-bio-data .cv-left b {
+            color: var(--secondary-color);
+            font-weight: 600;
+        }
+
+        .brief-bio-data .cv-note {
+            display: block;
+            color: #aeb7c6;
+            font-size: 14px;
+            line-height: 1.6;
+            margin-top: 3px;
+        }
+
+        .brief-bio-data .cv-year {
+            color: var(--theme-main-color);
+            text-align: right;
+            font-weight: 500;
+            white-space: nowrap;
+        }
+
+        .brief-bio-data .observing-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 35px;
+            margin-top: 8px;
+        }
+
+        .brief-bio-data .observing-card h3 {
+            color: var(--secondary-color);
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        .brief-bio-data .observing-card ul {
+            padding-left: 20px;
+            margin: 0;
+        }
+
+        .brief-bio-data .observing-card li {
+            color: var(--secondary-color);
+            margin-bottom: 11px;
+            font-weight: 300;
+            line-height: 1.7;
+        }
+
+        .brief-bio-data .observing-card b {
+            color: var(--theme-main-color);
+            font-weight: 500;
+        }
+
+
+        .brief-bio-data .cv-position {
+            display: block;
+            color: var(--secondary-color);
+            font-weight: 600;
+            line-height: 1.7;
+        }
+
+        .brief-bio-data .cv-place {
+            display: block;
+            color: var(--secondary-color);
+            font-weight: 300;
+            line-height: 1.7;
+        }
+
+        .brief-bio-data .cv-extra {
+            display: block;
+            color: #aeb7c6;
+            font-size: 14px;
+            line-height: 1.6;
+            margin-top: 3px;
+            font-weight: 300;
+        }
+
+
+        .brief-bio-data .cv-link {
+            display: inline-block;
+            color: #58c7ff;
+            text-decoration: none;
+            border-bottom: none;
+            font-size: 14px;
+            font-weight: 500;
+            letter-spacing: 0.3px;
+            margin-top: 5px;
+            transition: 0.3s;
+        }
+
+        .brief-bio-data .cv-link:hover {
+            color: #9bf1ff;
+            text-decoration: none;
+            border-bottom: none;
+        }
+
+        .brief-bio-data .observing-summary {
+            color: #aeb7c6;
+            font-size: 15px;
+            line-height: 1.8;
+            font-weight: 300;
+            margin: -3px 0 24px 0;
+        }
+
+        @media screen and (max-width: 768px) {
+            .brief-bio-data .cv-entry {
+                grid-template-columns: 1fr;
+                row-gap: 4px;
+            }
+
+            .brief-bio-data .cv-year {
+                text-align: left;
+            }
+
+            .brief-bio-data .observing-grid {
+                grid-template-columns: 1fr;
+                gap: 18px;
+            }
+        }
+    </style>
+
+
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
@@ -45,95 +196,260 @@
                 </div>
             </div>
 
-            <h2>Academic Position Held</h2>
+
+            <h2>Academic Positions Held</h2>
             <br>
 
-            <ul>
+            <div class="cv-list">
+                <div class="cv-entry">
+                    <div class="cv-left">
+                        <span class="cv-position">Exploration Prize Postdoctoral Fellow</span>
+                        <span class="cv-place">School of Earth and Space Exploration, Arizona State University</span>
+                        <span class="cv-extra">Collaborators: Prof. Sanchayeeta Borthakur, Prof. Rogier Windhorst, Prof. Allison Noble</span>
+                    </div>
+                    <div class="cv-year">August 2025 – Present</div>
+                </div>
 
-                            <li>
-                    Exploration Prize Post-Doctoral fellow,
-                    <i> <b>School of Earth and Space Exploration, Arizona State University</b> </i>,
-                    Tempe, AZ, USA
-                    (August 2025 - Present)
-                </li>
+                <div class="cv-entry">
+                    <div class="cv-left">
+                        <span class="cv-position">Postdoctoral Fellow</span>
+                        <span class="cv-place">Johns Hopkins University</span>
+                        <span class="cv-extra">Collaborators: Prof. Timothy Heckman &amp; Dr. Alaina Henry</span>
+                    </div>
+                    <div class="cv-year">September 2022 – July 2025</div>
+                </div>
 
-                <li>
-                    Post-Doctoral research fellow,
-                    <i> <b>Johns Hopkins University (& Space Telescope Science Institute)</b> </i>,
-                    Baltimore, MD, USA
-                    (September 2022 - July 2025)
-                </li>
+                <div class="cv-entry">
+                    <div class="cv-left">
+                        <span class="cv-position">Osterbrock Scholar</span>
+                        <span class="cv-place">University of California, Santa Cruz</span>
+                        <span class="cv-extra">Advisor: Prof. Sandra Faber &amp; Prof. Robert Williams</span>
+                    </div>
+                    <div class="cv-year">September 2019 – June 2022</div>
+                </div>
 
-                <li>
-                    Osterbrock Fellow,
-                    <i> <b>University of California Santa Cruz</b> </i>,
-                    Santa Cruz, CA, USA
-                    (September 2019 - June 2022)
-                </li>
-
-                <li>
-                    Summer Research Fellow,
-                    <i> <b>Harish Chandra Research Institute</b> </i>,
-                    Allahabad, India
-                    (2015)
-                </li>
-
-            </ul>
+                <div class="cv-entry">
+                    <div class="cv-left">
+                        <span class="cv-position">Summer Research Fellow</span>
+                        <span class="cv-place">Harish Chandra Research Institute</span>
+                        <span class="cv-extra">Advisor: Prof. Tapash Kumar Das</span>
+                    </div>
+                    <div class="cv-year">2015</div>
+                </div>
+            </div>
             <br>
 
             <h2>Education</h2>
             <br>
-            <ul>
 
+            <div class="cv-list">
+                <div class="cv-entry">
+                    <div class="cv-left">
+                        <span class="cv-position">University of California, Santa Cruz</span>
+                        <span class="cv-place">Ph.D. in Astronomy &amp; Astrophysics</span>
+                        <span class="cv-extra">Advisor: Prof. Kevin Bundy; Thesis: Star formation suppression and feedback in nearby galaxies</span>
+                    </div>
+                    <div class="cv-year">2016 – 2022</div>
+                </div>
 
-                <li>
-                    <b>Ph.D. in Astronomy & Astrophysics (2016-2022):</b>,
-                    University of California Santa Cruz, Santa Cruz, CA, USA
-                    <br>
-                    Thesis: Star formation suppression and feedback in nearby galaxies
-                    <br>
-                    Advisor: Prof. Kevin Bundy
-                </li>
+                <div class="cv-entry">
+                    <div class="cv-left">
+                        <span class="cv-position">Presidency University</span>
+                        <span class="cv-place">M.Sc. in Physics</span>
+                        <span class="cv-extra">Advisor: Prof. Durgesh Tripathi; Thesis: Characteristics of Chromospheric Spectral Line in Solar Flares</span>
+                    </div>
+                    <div class="cv-year">2014 – 2016</div>
+                </div>
 
-                <li>
-                    <b>M.Sc in Physics (2014-2016):</b>,
-                    Presidency University, Kolkata, India
-                    <br>
-                    Master's Project: Temporal Variability of Blazar lightcurves
-                    <br>
-                    Advisor: Prof. Ritaban Chatterjee
-                </li>
-
-                <li>
-                    <b>B.Sc in Physics (2011-2014):</b>,
-                    Presidency University, Kolkata, India
-
-                </li>
-
-            </ul>
+                <div class="cv-entry">
+                    <div class="cv-left">
+                        <span class="cv-position">Presidency University</span>
+                        <span class="cv-place">B.Sc. in Physics</span>
+                        <span class="cv-extra">Project Supervisor: Prof. Ritaban Chatterjee; Project: Probing the jets of blazars using the temporal symmetry of their multiwavelength outbursts</span>
+                    </div>
+                    <div class="cv-year">2011 – 2014</div>
+                </div>
+            </div>
             <br>
 
             <h2>Other Visiting Positions</h2>
             <br>
 
-            <ul>
-                <li>
-                    Visiting Scientist,
-                    <i> <b>Space Telescope Science Institute</b> </i>,
-                    Baltimore, MD, USA
-                    (September 2022 - July 2025)
-                </li>
+            <div class="cv-list">
+                <div class="cv-entry">
+                    <div class="cv-left">
+                        <span class="cv-position">Visiting Scientist</span>
+                        <span class="cv-place">Space Telescope Science Institute</span>
+                        <span class="cv-extra">Collaborators: Dr. Alaina Henry, Dr. Kate Rowlands, Dr. Katherine Alatalo</span>
+                    </div>
+                    <div class="cv-year">September 2022 – July 2025</div>
+                </div>
 
-    <li>
-                    Visiting Researcher,
-                    <i> <b>Center for Computational Astrophysics, Flatiron Institute</b> </i>,
-                    New York, NY, USA
-                    (September 2021)
-                </li>
+                <div class="cv-entry">
+                    <div class="cv-left">
+                        <span class="cv-position">Visiting Scientist</span>
+                        <span class="cv-place">Center for Computational Astrophysics, Flatiron Institute</span>
+                        <span class="cv-extra">Collaborators: Prof. Rachel Somerville &amp; Prof. Chris Hayward</span>
+                    </div>
+                    <div class="cv-year">September 2021</div>
+                </div>
+            </div>
+            <br>
+            <div class="cv-section">
+                <h2>Awards and Honors</h2>
+                <br>
 
-            </ul>
+                <div class="cv-list">
+                    <div class="cv-entry">
+                        <div class="cv-left">
+                            <b>Exploration Prize Postdoctoral Fellowship</b>, School of Earth and Space Exploration, Arizona State University
+                            <span class="cv-note">Independent postdoctoral fellowship awarded across astrophysics, cosmology, planetary science, geology, and Earth sciences.</span>
+                        <a class="cv-link" target="_blank" href="https://sese.asu.edu/awards-accolades#:~:text=Exploration%20Fellows&text=An%20academic%20unit%20of">Exploration  Fellows</a>
+                        </div>
+                        <div class="cv-year">2025</div>
+                    </div>
 
- 
+                    <div class="cv-entry">
+                        <div class="cv-left">
+                            <b>Space Telescope Science Institute Prize Fellowship</b>
+                            <span class="cv-note">Four-year independent fellowship offer (declined)</span>
+                        </div>
+                        <div class="cv-year">2022</div>
+                    </div>
+
+
+                    <div class="cv-entry">
+                        <div class="cv-left">
+                            <b>UC Dissertation Year Chancellor’s Fellowship</b>
+                            <br>
+                            <a class="cv-link" target="_blank" href="https://science.ucsc.edu/student-award-recipients-for-2020-21/">Chancellor’s Fellows</a>
+                        
+                        </div>
+                        <div class="cv-year">2021</div>
+                    </div>
+
+                    <div class="cv-entry">
+                        <div class="cv-left">
+                            <b>AAS National Osterbrock Leadership Program Fellowship</b>, UC Santa Cruz
+                            <br>
+                            <a class="cv-link" target="_blank" href="https://aas.org/nolp/fellows">AAS NOLP page</a>
+                        </div>
+                        <div class="cv-year">2019–2022</div>
+                    </div>
+
+                    <div class="cv-entry">
+                        <div class="cv-left">
+                            <b>Summer Research Fellowship</b>, Harish-Chandra Research Institute, India
+                        </div>
+                        <div class="cv-year">2015</div>
+                    </div>
+
+                    <div class="cv-entry">
+                        <div class="cv-left">
+                            <b>INSPIRE Scholarship</b>, Department of Science &amp; Technology, Government of India
+                        </div>
+                        <div class="cv-year">2011–2016</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cv-section">
+                <h2>Financial Grants and Fellowships</h2>
+                <br>
+
+                <div class="cv-list">
+                    <div class="cv-entry">
+                        <div class="cv-left">
+                            <b>Exploration Prize Postdoctoral Fellowship</b>
+                        </div>
+                        <div class="cv-year">2025</div>
+                    </div>
+
+                    <div class="cv-entry">
+                        <div class="cv-left">
+                            <b>Hubble Space Telescope observing-program grants</b>
+                            <span class="cv-note">PI and Co-I programs across Cycles 30–33.</span>
+                        </div>
+                        <div class="cv-year">2023–2025</div>
+                    </div>
+
+                    <div class="cv-entry">
+                        <div class="cv-left">
+                            <b>James Webb Space Telescope observing-program grants</b>
+                            <span class="cv-note">Programs across Cycles 3–4.</span>
+                        </div>
+                        <div class="cv-year">2024–2025</div>
+                    </div>
+
+                    <div class="cv-entry">
+                        <div class="cv-left">
+                            <b>National Science Foundation grant</b>
+                            <span class="cv-note">Red geysers and the suppression of star formation.</span>
+                        </div>
+                        <div class="cv-year">2018</div>
+                    </div>
+
+                    <div class="cv-entry">
+                        <div class="cv-left">
+                            <b>Conference organization funds</b>, STScI Spring Symposium
+                            <span class="cv-note">“Recipes to Regulate Star Formation at All Scales: From the Nearby Universe to the First Galaxies.”</span>
+                        </div>
+                        <div class="cv-year">2024</div>
+                    </div>
+
+                    <div class="cv-entry">
+                        <div class="cv-left">
+                            <b>UC Chancellor’s Dissertation Year Fellowship</b>
+                        </div>
+                        <div class="cv-year">2021</div>
+                    </div>
+
+                    <div class="cv-entry">
+                        <div class="cv-left">
+                            <b>AAS National Osterbrock Leadership Program Fellowship</b>
+                        </div>
+                        <div class="cv-year">2019–2022</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cv-section">
+                <h2>Observing Telescope Time</h2>
+                <br>
+                <p class="observing-summary">
+                    Obtained 300+ hrs space-based (HST+JWST+XRISM) telescopes, 30+ hrs ground-based telescope time.
+                </p>
+
+                <div class="observing-grid">
+                    <div class="observing-card">
+                        <h3>PI / deputy-PI / science-PI programs</h3>
+                        <ul>
+                            <li><b>HST:</b> COS, UV/optical imaging and archival spectroscopy</li>
+                            <li><b>Magellan:</b> Baade/FIRE; Clay/LLAMAS</li>
+                            <li><b>Keck:</b> OSIRIS</li>
+                            <li><b>MMT:</b> Binospec</li>
+                            <li><b>GMRT:</b> radio continuum observations</li>
+                            <li><b>LBT:</b> optical spectroscopy/imaging programs</li>
+                            <li><b>ALMA:</b> millimeter/submillimeter observations</li>
+                            <li><b>APEX:</b> millimeter observations</li>
+                        </ul>
+                    </div>
+
+                    <div class="observing-card">
+                        <h3>Co-I / collaborative programs</h3>
+                        <ul>
+                            <li><b>JWST:</b> MIRI, NIRSpec, and NIRCam programs</li>
+                            <li><b>HST:</b> archival UV/optical spectroscopy programs</li>
+                            <li><b>VLT:</b> ERIS</li>
+                            <li><b>Keck:</b> OSIRIS, KCWI</li>
+                            <li><b>GMRT:</b> radio-mode feedback programs</li>
+                            <li><b>GBT:</b> CO(1–0) observations</li>
+                            <li><b>XRISM:</b> X-ray spectroscopy of radio-mode feedback</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
 
         </div>
     </section>
@@ -169,7 +485,7 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6">
-                    <h6>Namrata Roy © 2026. All Right Reserved</h6>
+                    <h6>Namrata Roy © 2026. All Rights Reserved</h6>
                 </div>
                 <div class="col-lg-6 text-end">
                     <div class="social-icons">

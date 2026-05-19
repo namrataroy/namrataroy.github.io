@@ -26,6 +26,30 @@
     <!--custom css-->
     <link href="css/style.css" rel="stylesheet" type="text/css">
 
+    <style>
+        .publications .playlist-box {
+            display: inline-block;
+            color: var(--theme-main-color, #f0e68c);
+            border: 1px solid rgba(240, 230, 140, 0.85);
+            border-radius: 50px;
+            padding: 9px 22px;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+            margin: 0.2rem 0 2.4rem 0;
+            transition: 0.3s;
+            background-color: rgba(240, 230, 140, 0.06);
+        }
+
+        .publications .playlist-box:hover {
+            color: var(--theme-focus-color, #9bf1ff);
+            border-color: var(--theme-focus-color, #9bf1ff);
+            background-color: rgba(155, 241, 255, 0.07);
+        }
+    </style>
+
+
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
@@ -43,11 +67,13 @@
             <div class="row">
                 <div class="col-lg-12">
                     <h1>Publications </h1>
+                    <a class="playlist-box" target="_blank" href="https://ui.adsabs.harvard.edu/public-libraries/7NgQFkV_Sz-RXnsYreI_Tg">NASA ADS Library</a>
+               
                 </div>
             </div>
 
 
-            <h2>Full list of publications: <a target="_blank" href="https://ui.adsabs.harvard.edu/search/p_=0&q=docs(library%2F7NgQFkV_Sz-RXnsYreI_Tg)&sort=date%20desc%2C%20bibcode%20desc">ADS library</a>. Selected list of papers below:</h2>
+            <h2> Selected list of papers below:</h2>
             <br>
             <ol>
                 <li>
@@ -264,7 +290,7 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6">
-                    <h6>Namrata Roy © 2026. All Right Reserved</h6>
+                    <h6>Namrata Roy © 2026. All Rights Reserved</h6>
                 </div>
                 <div class="col-lg-6 text-end">
                     <div class="social-icons">
