@@ -705,8 +705,8 @@ section.brief-bio-data ul li {
     right: 9%;
     top: 50%;
     transform: translateY(-50%);
-    width: min(34vw, 370px);
-    aspect-ratio: 3 / 4;
+    width: min(38vw, 420px);
+    aspect-ratio: 4 / 5;
     background-image: url(../images/creative2-banner-bg4.jpg);
     background-size: cover;
     background-position: center;
