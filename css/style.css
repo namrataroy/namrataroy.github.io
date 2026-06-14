@@ -131,6 +131,11 @@ ul {
     width: 40%;
 }
 
+.banner .banner-caption p.appointment-institute {
+    width: 100%;
+    white-space: nowrap;
+}
+
 .banner .banner-caption h6 {
     font-size: 18px;
     letter-spacing: 2px;
