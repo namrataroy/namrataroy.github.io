@@ -174,6 +174,48 @@
             display: block;
         }
 
+        .student-research-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 18px;
+            margin-top: 18px;
+        }
+
+        .student-research-grid .student-plot {
+            margin-top: 0;
+        }
+
+        .anushka-photo {
+            width: 82%;
+            margin: 0 auto;
+            aspect-ratio: 4 / 3;
+            object-position: center 38%;
+        }
+
+        .anushka-research-grid {
+            width: 112%;
+            margin-left: -6%;
+            gap: 12px;
+        }
+
+        .anushka-research-grid .student-plot {
+            aspect-ratio: 4 / 3;
+            object-fit: cover;
+        }
+
+        .student-wide-plot {
+            width: 112%;
+            margin-left: -6%;
+            aspect-ratio: 10 / 3;
+            object-fit: contain;
+            margin-top: 12px;
+        }
+
+        .arian-naid-plot {
+            aspect-ratio: 578 / 375;
+            object-fit: contain;
+        }
+
         .student-name {
             color: var(--theme-main-color);
             font-size: 30px;
@@ -278,6 +320,13 @@
                 font-size: 24px;
                 margin-top: 22px;
             }
+
+            .anushka-photo,
+            .anushka-research-grid,
+            .student-wide-plot {
+                width: 100%;
+                margin-left: 0;
+            }
         }
     </style>
 
@@ -304,17 +353,67 @@
         <div class="container">
             <div class="row align-items-center g-5">
                 <div class="col-lg-5">
+                    <img src="images/students/anushka-agarwal.jpeg" alt="Anushka Agarwal" class="student-photo anushka-photo">
+                    <div class="student-research-grid anushka-research-grid">
+                        <img src="images/students/anushka-hi-optical-depth.png" alt="HI 21-cm optical-depth absorption spectrum" class="student-plot">
+                        <img src="images/students/anushka-m17.jpg" alt="M17 star-forming region" class="student-plot">
+                    </div>
+                    <img src="images/students/lofar_example.jpeg" alt="LOFAR radio-continuum maps of low-luminosity AGN hosts" class="student-plot student-wide-plot">
+                </div>
+                <div class="col-lg-7">
+                    <h2 class="student-name">Anushka Agarwal</h2>
+                    <div class="student-role">Low-luminosity AGNs in quiescent galaxies</div>
+                    <p>
+                        Anushka is a visiting student scientist at the Raman Research Institute, where she is studying low-luminosity
+                        AGNs living inside quiescent, non-star-forming galaxies. Her project uses uGMRT Band 4 radio-continuum
+                        data at ~650 MHz along with existing observations from LOFAR, FIRST, VLASS, MaNGA, and Keck data. By mapping radio morphology, spectral structure, and
+                        aged synchrotron plasma, she is testing whether weak radio AGNs and small-scale jets are linked to the
+                        large-scale ionized gas outflows that may keep the gas warm, suppress star formation, and push material
+                        toward the circumgalactic medium.
+                    </p>
+                    <p>
+                        Anushka completed her M.Sc. in Astronomy at IIT Indore and holds a B.Sc. (Honours) in Physics with
+                        first-class distinction. She received the IIT Indore Merit-cum-Means Scholarship and has experience
+                        with CASA, WSClean, GARUDA, Python, and radio data analysis. She is currently applying for PhD positions.
+                    </p>
+                    <p>
+                        For her Master's thesis at IIT Indore, Anushka studied the warm neutral medium of the Milky Way using
+                        a high-velocity-resolution HI 21-cm absorption survey with the uGMRT. The survey targeted compact
+                        extragalactic radio sources as background beacons, allowing her to probe diffuse warm gas along the
+                        line of sight. She reduced and analysed a roughly 60 TB data set, imaged the data, and extracted optical
+                        depths, HI column densities, and spin-temperature constraints from the absorption spectra.
+                    </p>
+                    <div class="student-project">
+                        <strong>Project highlight:</strong> Anushka's work connects the small-scale radio signature of
+                        black-hole activity to a bigger galaxy-evolution puzzle: why some galaxies remain quiet even when gas
+                        is still present.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="student-separator"></div>
+
+    <section class="student-profile">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-5">
                     <img src="images/students/arian-moghni.jpg" alt="Arian Moghni" class="student-photo">
                     <img src="images/students/arian-galactic-rain.png" alt="Arian Moghni red geyser galaxy and H alpha equivalent-width map" class="student-plot">
+                    <img src="images/students/apjae5f90f13_lr.jpg" alt="Na I D area by radio detection type in red geyser galaxies" class="student-plot arian-naid-plot">
                 </div>
                 <div class="col-lg-7">
                     <h2 class="student-name">Arian Moghni</h2>
                     <div class="student-role">Red geysers, gas flows, and AGN fueling</div>
                     <p>
-                        Arian studies how low-luminosity AGN hosts keep their black holes fed after star formation has mostly
-                        shut down. In his ApJ paper, he uses MaNGA spectroscopy of red geyser galaxies to connect outflowing
-                        ionized-gas structures with cool-gas inflow, showing that interactions can help deliver fuel to the
-                        central AGN while feedback leaves galaxy-scale signatures in the surrounding gas.
+                        Arian studies how radiatively inefficient accreting black holes in ''red geyser'' galaxies  gets fed after star formation has mostly
+                        shut down. In his ApJ paper, he uses MaNGA spectroscopy of 140 red geyser galaxies to map cool,
+                        neutral gas through the Na I D absorption doublet and compare it with ionized-gas outflows, radio
+                        detections, and galaxy environment. His work finds that much of the Na I D-traced gas is inflowing,
+                        and that radio-detected systems host especially extended cool-gas reservoirs, pointing to a live
+                        cycle in which interactions can replenish gas, fuel weak AGN activity, and leave feedback signatures
+                        across the host galaxy.
                     </p>
                     <p>
                         He is a fourth-year undergraduate student at the University of California, Santa Cruz, majoring
