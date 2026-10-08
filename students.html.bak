@@ -203,10 +203,6 @@
             object-fit: cover;
         }
 
-        .siddharth-research-grid {
-            align-items: center;
-        }
-
         .student-wide-plot {
             width: 112%;
             margin-left: -6%;
@@ -391,53 +387,6 @@
                         <strong>Project highlight:</strong> Anushka's work connects the small-scale radio signature of
                         black-hole activity to a bigger galaxy-evolution puzzle: why some galaxies remain quiet even when gas
                         is still present.
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <div class="student-separator"></div>
-
-    <section class="student-profile">
-        <div class="container">
-            <div class="row align-items-center g-5">
-                <div class="col-lg-5">
-                    <img src="images/students/siddharth-dutta.jpg" alt="Siddharth Dutta" class="student-photo">
-                    <div class="student-research-grid siddharth-research-grid">
-                        <img src="images/students/siddharth-tng-shocks.jpg" alt="IllustrisTNG100 gas shocks and dark matter density composite" class="student-plot">
-                        <img src="images/students/siddharth-colour-distribution.png" alt="g-r colour distributions of simulated galaxies compared with the literature in stellar-mass bins" class="student-plot">
-                    </div>
-                    <img src="images/students/siddharth-sed.png" alt="CIGALE spectral energy distribution of an IllustrisTNG subhalo showing total and AGN emission" class="student-plot">
-                </div>
-                <div class="col-lg-7">
-                    <h2 class="student-name">Siddharth Dutta</h2>
-                    <div class="student-role">Ionization mechanisms and AGN feedback in the ISM</div>
-                    <p>
-                        Siddharth is a visiting student at the Raman Research Institute, where he is working with me on the
-                        physical processes that shape the interstellar medium (ISM) of galaxies across different spatial scales.
-                        His project focuses on identifying the dominant ionization mechanism in the gas, using spatially resolved
-                        spectroscopic data to disentangle how AGN feedback, shocks, and stellar photoionization affect the
-                        dynamics and properties of the ISM. In the longer run, the goal is to quantify the impact of AGN
-                        activity on the ISM of their host galaxies.
-                    </p>
-                    <p>
-                        Siddharth completed his Master's in Astrophysics at Presidency University, Kolkata. For his Master's
-                        thesis, he built a pipeline that connects cosmological simulations such as IllustrisTNG to the spectral
-                        energy distribution (SED) modelling code CIGALE. This was part of a larger effort to build mock AGN
-                        host-galaxy catalogs from simulations, to complement state-of-the-art surveys like DESI and LSST, and
-                        to study how photometric colours trace galaxy and AGN properties. He showed that CIGALE allows more
-                        flexibility in the AGN parameter space and reproduces more distinct galaxy features, and he is
-                        currently working on resolving the discrepancies that arise from the choice of SED modeller.
-                    </p>
-                    <p>
-                        Siddharth is fascinated by questions of galaxy formation and evolution, AGN growth and feedback,
-                        high-redshift galaxies, and the epoch of reionization.
-                    </p>
-                    <div class="student-project">
-                        <strong>Project highlight:</strong> By separating the contributions of AGN, shocks, and young stars
-                        to the ionized gas on resolved scales, Siddharth's work aims to measure how strongly black holes
-                        actually shape the gas in their host galaxies.
                     </div>
                 </div>
             </div>
